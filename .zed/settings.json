@@ -1,0 +1,52 @@
+{
+  "languages": {
+    "Nix": {
+      "tab_size": 2,
+      "language_servers": ["nixd", "!nil"],
+      "formatter": {
+        "external": {
+          "command": "alejandra",
+          "arguments": ["--quiet"]
+        }
+      }
+    },
+    "Svelte": {
+      "language_servers": ["svelte-language-server", "tailwindcss-language-server"],
+      "formatter": "prettier"
+    }
+  },
+  "lsp": {
+    "eslint": {
+      "binary": {
+        "ignore_system_version": false,
+        "path": "node_modules/.bin/eslint"
+      },
+      "initialization_options": {
+        "workingDirectory": { "mode": "location" }
+      }
+    },
+    "svelte-language-server": {
+      "binary": {
+        "ignore_system_version": false,
+        "path": "node_modules/.bin/svelteserver",
+        "arguments": ["--stdio"]
+      }
+    },
+    "tailwindcss-language-server": {
+          "settings": {
+            "includeLanguages": {
+              "svelte": "html"
+            },
+            "experimental": {
+              "classRegex": [
+                "class=\"([^\"]*)\"",
+                "class='([^']*)'",
+                "class:\\s*([^\\s{]+)",
+                "\\{\\s*class:\\s*\"([^\"]*)\"",
+                "\\{\\s*class:\\s*'([^']*)'"
+              ]
+            }
+          }
+        }
+  }
+}
