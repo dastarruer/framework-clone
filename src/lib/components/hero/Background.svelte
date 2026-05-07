@@ -1,11 +1,7 @@
-<div class="hero">
-	<svg viewBox="0 0 1440 600" preserveAspectRatio="none">
-		<path d="M0,100 Q720,300 1440,100 L1440,600 L0,600 Z" fill="#ff6b6b" />
-		<path d="M0,200 Q720,400 1440,200 L1440,600 L0,600 Z" fill="#ffd93d" />
-		<!-- more strips -->
+<div>
+	<svg class="h-dvh w-full" viewBox="0 0 1440 1080" preserveAspectRatio="none">
+		<path d="M0,100 Q720,100 1440,300 L1440,1080 L0,1080 Z" fill="var(--color-red)" />
+		<path d="M0,200 Q720,100 1440,500 L1440,1080 L0,1080 Z" fill="var(--color-blue)" />
+		<path d="M0,300 Q720,100 1440,700 L1440,1080 L0,1080 Z" fill="var(--color-yellow)" />
 	</svg>
-	<div class="content">
-		<h1>Laptop Name</h1>
-		<button>Configure Now</button>
-	</div>
 </div>
