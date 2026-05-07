@@ -2,6 +2,7 @@
 @plugin '@tailwindcss/typography';
 
 @theme {
+    /* COLORS */
 	--color-accent-primary: #ff6600;
 	--color-background: #f5f5f7;
 	--color-background-alt: #000000;
@@ -12,4 +13,7 @@
 	--color-red: #ff6b6b;
 	--color-blue: #3edfc8;
 	--color-yellow: #d5da38;
+
+	/* FONTS */
+	--font-sans: 'Outfit', sans-serif;
 }
