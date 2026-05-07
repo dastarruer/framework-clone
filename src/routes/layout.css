@@ -2,17 +2,21 @@
 @plugin '@tailwindcss/typography';
 
 @theme {
-    /* COLORS */
-	--color-accent-primary: #ff6600;
+	/* COLORS */
 	--color-background: #f5f5f7;
 	--color-background-alt: #000000;
 	--color-text: #ffffff;
 	--color-text-alt: #86868b;
 	--color-border: #2d2d2d;
 
+	--color-orange: #ff6600;
 	--color-red: #ff6b6b;
 	--color-blue: #3edfc8;
 	--color-yellow: #d5da38;
+
+	--color-orange-hover: #f2680c;
+
+	--color-orange-click: #e95e02;
 
 	/* FONTS */
 	--font-sans: 'Outfit', sans-serif;
