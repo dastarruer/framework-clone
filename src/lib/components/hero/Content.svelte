@@ -1,5 +1,15 @@
+<script>
+	import { Canvas } from '@threlte/core';
+	import Laptop from './Laptop.svelte';
+</script>
+
 <div class="flex w-1/2 flex-col items-center gap-5">
-	<h1 class="font-sans text-6xl font-bold text-black">Framework Laptop 16</h1>
+	<div class="h-96 w-full">
+		<Canvas>
+			<Laptop />
+		</Canvas>
+	</div>
+	<h1 class="-mt-8 font-sans text-6xl font-bold text-black">Framework Laptop 16</h1>
 	<p class="text-2xl">
 		Framework Laptop 13 is a thin, light, and fast 13.5” notebook that is simple to customize,
 		upgrade, and repair, so it stays yours for longer.
