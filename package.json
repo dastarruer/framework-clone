@@ -40,6 +40,7 @@
 	},
 	"dependencies": {
 		"@threlte/core": "^8.5.11",
-		"@threlte/extras": "^9.15.1"
+		"@threlte/extras": "^9.15.1",
+		"bits-ui": "^2.18.1"
 	}
 }
