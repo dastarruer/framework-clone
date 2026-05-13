@@ -8,7 +8,13 @@
 </script>
 
 <T.PerspectiveCamera makeDefault position={[4, 2, 5]} zoom={0.45} fov={20}>
-	<OrbitControls enableZoom={false} enablePan={false} enableDamping dampingFactor={0.1} />
+	<OrbitControls
+		enableZoom={false}
+		enablePan={false}
+		enableDamping
+		dampingFactor={0.1}
+		autoRotate={true}
+	/>
 </T.PerspectiveCamera>
 
 <T.AmbientLight intensity={0.5} />
