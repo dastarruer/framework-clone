@@ -4,7 +4,7 @@
 	import { OrbitControls } from '@threlte/extras';
 	import { useGltf } from '@threlte/extras';
 
-	const gltfStore = useGltf(asset('/framework_16_laptop.glb'));
+	const gltfStore = useGltf(asset('/models/framework_16_laptop.glb'));
 </script>
 
 <T.PerspectiveCamera makeDefault position={[4, 2, 5]} zoom={0.45} fov={20}>
