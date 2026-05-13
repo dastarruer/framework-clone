@@ -1,5 +1,6 @@
 <script lang="ts">
 	// import { asset } from '$app/paths';
+	import { asset } from '$app/paths';
 	import { NavigationMenu } from 'bits-ui';
 
 	type ListItemProps = {
@@ -12,7 +13,9 @@
 <!-- {#snippet ListItem({ img, title }: ListItemProps)} -->
 {#snippet ListItem({ title }: ListItemProps)}
 	<NavigationMenu.Item>
-		<NavigationMenu.Trigger class="cursor-pointer hover:underline">{title}</NavigationMenu.Trigger>
+		<NavigationMenu.Trigger class="cursor-pointer font-sans font-medium hover:underline"
+			>{title}</NavigationMenu.Trigger
+		>
 		<!-- content is broekn right now -->
 		<!-- <NavigationMenu.Content class="z-20 flex w-svw bg-amber-300">
 			<img src={img} alt="Picture of {title}" />
@@ -33,6 +36,7 @@
 	<NavigationMenu.Root class="relative">
 		<NavigationMenu.List class="relative flex h-20 items-center px-8">
 			<div class="flex gap-8">
+				<img src={asset('/images/logo.svg')} alt="Framework logo" class="h-full w-40" />
 				{@render ListItem({
 					title: 'Desktop'
 				})}
