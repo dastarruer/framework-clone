@@ -1,7 +1,7 @@
 <script lang="ts">
 	// import { asset } from '$app/paths';
 	import { asset } from '$app/paths';
-	import { NavigationMenu } from 'bits-ui';
+	import { NavigationMenu, Separator } from 'bits-ui';
 
 	type ListItemProps = {
 		img?: string;
@@ -32,11 +32,11 @@
 {/snippet}
 
 <nav
-	class="fixed top-0 left-0 z-100 h-20 w-full border-b border-stone-300 bg-background text-black drop-shadow-lg/10 drop-shadow-background-alt"
+	class="fixed top-0 left-0 z-100 h-20 w-svw border-b border-stone-300 bg-background text-black drop-shadow-lg/10 drop-shadow-background-alt"
 >
-	<NavigationMenu.Root class="relative flex h-full items-stretch px-8">
-		<NavigationMenu.List class="flex h-full items-center">
-			<div class="flex h-full">
+	<NavigationMenu.Root class="relative flex h-full w-full items-stretch px-8">
+		<NavigationMenu.List class="flex h-full w-full items-center justify-between">
+			<div class="flex h-full w-6xl">
 				<img src={asset('/images/logo.svg')} alt="Framework logo" class="mr-8 h-full w-40" />
 				{@render ListItem({
 					title: 'Desktop'
@@ -50,6 +50,13 @@
 				{@render ListItem({
 					title: 'Laptop 16'
 				})}
+			</div>
+			<div class="flex h-full">
+				<Separator.Root
+					orientation="vertical"
+					decorative={true}
+					class="border border-gray-800 opacity-50"
+				/>
 			</div>
 		</NavigationMenu.List>
 		<!-- i give up on this, i gotta move on -->
