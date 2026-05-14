@@ -12,8 +12,9 @@
 <!-- img isn't used right now since content is broken -->
 <!-- {#snippet ListItem({ img, title }: ListItemProps)} -->
 {#snippet ListItem({ title }: ListItemProps)}
-	<NavigationMenu.Item>
-		<NavigationMenu.Trigger class="cursor-pointer font-sans font-medium hover:underline"
+	<NavigationMenu.Item class="h-full">
+		<NavigationMenu.Trigger
+			class="h-full cursor-pointer pr-2.5 pl-2.5 font-sans font-medium transition-colors duration-150 hover:bg-orange"
 			>{title}</NavigationMenu.Trigger
 		>
 		<!-- content is broekn right now -->
@@ -33,9 +34,9 @@
 <nav
 	class="fixed top-0 left-0 z-100 h-20 w-full border-b border-stone-300 bg-background text-black drop-shadow-lg/10 drop-shadow-background-alt"
 >
-	<NavigationMenu.Root class="relative">
-		<NavigationMenu.List class="relative flex h-20 items-center px-8">
-			<div class="flex gap-8">
+	<NavigationMenu.Root class="relative flex h-full items-stretch px-8">
+		<NavigationMenu.List class="flex h-full items-center gap-8">
+			<div class="flex h-full gap-8">
 				<img src={asset('/images/logo.svg')} alt="Framework logo" class="h-full w-40" />
 				{@render ListItem({
 					title: 'Desktop'
