@@ -32,7 +32,7 @@
 {/snippet}
 
 <nav
-	class="fixed top-0 left-0 z-100 h-20 w-svw border-b border-stone-300 bg-background text-black drop-shadow-lg/10 drop-shadow-background-alt"
+	class="fixed top-0 left-0 z-100 h-16 w-svw border-b border-stone-300 bg-background text-black drop-shadow-lg/10 drop-shadow-background-alt"
 >
 	<NavigationMenu.Root class="relative flex h-full w-full items-stretch px-8">
 		<NavigationMenu.List class="flex h-full w-full items-center justify-between">
