@@ -1,7 +1,7 @@
 <script lang="ts">
 	// import { asset } from '$app/paths';
 	import { asset } from '$app/paths';
-	import { NavigationMenu, Separator } from 'bits-ui';
+	import { Avatar, NavigationMenu, Separator } from 'bits-ui';
 
 	type ListItemProps = {
 		img?: string;
@@ -51,12 +51,20 @@
 					title: 'Laptop 16'
 				})}
 			</div>
-			<div class="flex h-full">
+			<div class="flex h-full items-center gap-8">
 				<Separator.Root
 					orientation="vertical"
 					decorative={true}
-					class="border border-gray-800 opacity-50"
+					class="h-10 border border-gray-300 opacity-50"
 				/>
+				<Avatar.Root class="cursor-pointer">
+					<div
+						class="flex h-13 w-13 items-center justify-center overflow-hidden rounded-full border-2 border-transparent"
+					>
+						<Avatar.Image src="https://www.bits-ui.com/avatar-1.png" alt="@huntabyte" />
+						<Avatar.Fallback class="border-muted border">HB</Avatar.Fallback>
+					</div>
+				</Avatar.Root>
 			</div>
 		</NavigationMenu.List>
 		<!-- i give up on this, i gotta move on -->
