@@ -65,6 +65,7 @@
 						<Avatar.Fallback class="border-muted border">HB</Avatar.Fallback>
 					</div>
 				</Avatar.Root>
+				<img src={asset('/images/cart.png')} alt="Shopping cart" class="h-10 w-10" />
 			</div>
 		</NavigationMenu.List>
 		<!-- i give up on this, i gotta move on -->
