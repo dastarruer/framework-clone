@@ -35,9 +35,9 @@
 	class="fixed top-0 left-0 z-100 h-20 w-full border-b border-stone-300 bg-background text-black drop-shadow-lg/10 drop-shadow-background-alt"
 >
 	<NavigationMenu.Root class="relative flex h-full items-stretch px-8">
-		<NavigationMenu.List class="flex h-full items-center gap-8">
-			<div class="flex h-full gap-8">
-				<img src={asset('/images/logo.svg')} alt="Framework logo" class="h-full w-40" />
+		<NavigationMenu.List class="flex h-full items-center">
+			<div class="flex h-full">
+				<img src={asset('/images/logo.svg')} alt="Framework logo" class="mr-8 h-full w-40" />
 				{@render ListItem({
 					title: 'Desktop'
 				})}
